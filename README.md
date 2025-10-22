@@ -67,7 +67,7 @@ pip install -r requirements.txt
 - **Veritabanını Oluşturma**: Ardından ```db_create.py``` script'i çalıştırılarak ```chroma_db``` klasörü oluşturulmalıdır. Script, sisteminizin hangi parçasıyla sürecin en hızlı şekilde sonuçlanacağını tespit edecek ve ona göre sisteminizden kaynak ayıracaktır. Bu işlem sistemden sisteme değişkenlik göstermekle birlikte, biraz **UZUN** sürebilmektedir (Ortalama bir ekran kartı ile 15-20 dakika).
 
 ### **5. OpenAI API Anahtarını Ayarlama:**
--Bu proje, cevap üretimi için OpenAI API'sini kullanmaktadır. Proje klasörünün içerisine ```.env``` isimli bir dosya oluşturun ve ardından içerisine aşağıda gösterildiği gibi OpenAI API Key'inizi girin.
+- Bu proje, cevap üretimi için OpenAI API'sini kullanmaktadır. Proje klasörünün içerisine ```.env``` isimli bir dosya oluşturun ve ardından içerisine aşağıda gösterildiği gibi OpenAI API Key'inizi girin.
  ```bash
 OPENAI_API_KEY=api_anahtarı_buraya_yazılacak
 ```
