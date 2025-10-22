@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ```
 
 ### **4. Veri Setini İndirme ve Veritabanını Oluşturma:**
-- **ÖNEMLİ⚠️**: Bu proje için gerekli olan veri dosyaları ham haliyle repoya dahil edilmemiştir. Projenin test edilebilmesi için gerekli veritabanı oluşturulmuş ve "**chroma_db**" adlı klasör ile sunulmuştur. Eğer projeyi sadece denemek isterseniz, bu aşamayı atlayabilirsiniz.
+- **ÖNEMLİ⚠️**: Bu proje için gerekli olan veri dosyaları ham haliyle repoya dahil edilmemiştir. Projenin lokal olarak test edilebilmesi için gerekli veritabanı oluşturulmuş ve "**chroma_db**" adlı klasör ile sunulmuştur. Eğer projeyi lokal olarak denemek isterseniz, bu aşamayı atlayabilirsiniz.
 
 - **Veriyi Çekme**: Öncelikle ```data_wiki_infobox.py``` çalıştırılarak demo için hazırlanmış olan "Abilities" (Yetenekler), "Pokedex" (Pokemonların tamamı), verilerinin hepsini ".txt" uzantısı ile indirmeniz gerekmektedir. Script, ```pokemon_data``` isimli bir klasör oluşturup içerisine indirme işlemini gerçekleştirecektir.
 
@@ -75,3 +75,12 @@ OPENAI_API_KEY=api_anahtarı_buraya_yazılacak
 ```
 streamlit run app.py
 ```
+## 🔮 Yapılabilecek Geliştirmeler
+- Veri setine "Items" (Eşyalar) ve "Locations" (Bölgeler) gibi daha fazla konunun eklenmesi.
+
+- Gelişmiş ayarların arayüze eklenmesi.
+
+- Kullanıcı geri bildirim mekanizması eklenmesi.
+
+## 🔗 Deploy Linki
+Uygulamanın canlı demosuna [Demo Linki](https://poke-gpt-4yrfzmwfg38xhakmfeawax.streamlit.app/) adresinden ulaşabilirsiniz. Canlı demo sadece **genel bilgi** modunda çalışacaktır. Tam RAG işlevselliği için projeyi lokal olarak kurup çalıştırmanız gerekmektedir. Proje kendi veri seti ile çalışırken kayıt altına alınıp **Demo** kısmında gösterilmiştir.
