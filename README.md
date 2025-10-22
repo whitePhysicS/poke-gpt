@@ -32,3 +32,8 @@
 └──  📁 images/ # README için görseller (ekran görüntüsü vb.).
           └── 🖼️ pokegpt_screenshot.png
 ```
+## 📹Demo Görüntüleri
+- ![Demo1](images/demo.gif)
+
+- ![Demo2](images/demo2.gif)
+
