@@ -40,13 +40,13 @@
 
 ## ⚙️ Kurulum ve Çalıştırma
 
-**1. Repoyu Klonlama:**
+### **1. Repoyu Klonlama:**
 ```bash
 git clone https://github.com/whitePhysicS/poke-gpt
 cd poke-gpt
 ```
 
-**2. Sanal Ortam Oluşturma ve Aktifleştirme (Şiddetle Önerilir):**
+### **2. Sanal Ortam Oluşturma ve Aktifleştirme (Şiddetle Önerilir):**
 ```bash
 python -m venv .venv
 # Windows için:
@@ -54,23 +54,24 @@ python -m venv .venv
 # macOS/Linux için:
 source .venv/bin/activate
 ```
-**3. Gerekli Kütüphanelerin Kurulumu:**
+### **3. Gerekli Kütüphanelerin Kurulumu:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**4. Veri Setini İndirme ve Veritabanını Oluşturma:**
+### **4. Veri Setini İndirme ve Veritabanını Oluşturma:**
 - **ÖNEMLİ⚠️**: Bu proje için gerekli olan veri dosyaları ham haliyle repoya dahil edilmemiştir. Projenin test edilebilmesi için gerekli veritabanı oluşturulmuş ve "**chroma_db**" adlı klasör ile sunulmuştur. Eğer projeyi sadece denemek isterseniz, bu aşamayı atlayabilirsiniz.
 
 - **Veriyi Çekme**: Öncelikle ```data_wiki_infobox.py``` çalıştırılarak demo için hazırlanmış olan "Abilities" (Yetenekler), "Pokedex" (Pokemonların tamamı), verilerinin hepsini ".txt" uzantısı ile indirmeniz gerekmektedir. Script, ```pokemon_data``` isimli bir klasör oluşturup içerisine indirme işlemini gerçekleştirecektir.
 
 - **Veritabanını Oluşturma**: Ardından ```db_create.py``` script'i çalıştırılarak ```chroma_db``` klasörü oluşturulmalıdır. Script, sisteminizin hangi parçasıyla sürecin en hızlı şekilde sonuçlanacağını tespit edecek ve ona göre sisteminizden kaynak ayıracaktır. Bu işlem sistemden sisteme değişkenlik göstermekle birlikte, biraz **UZUN** sürebilmektedir (Ortalama bir ekran kartı ile 15-20 dakika).
 
-**5. OpenAI API Anahtarını Ayarlama:** Bu proje, cevap üretimi için OpenAI API'sini kullanmaktadır. Proje klasörünün içerisine ```.env``` isimli bir dosya oluşturun ve ardından içerisine aşağıda gösterildiği gibi OpenAI API Key'inizi girin.
+### **5. OpenAI API Anahtarını Ayarlama:**
+-Bu proje, cevap üretimi için OpenAI API'sini kullanmaktadır. Proje klasörünün içerisine ```.env``` isimli bir dosya oluşturun ve ardından içerisine aşağıda gösterildiği gibi OpenAI API Key'inizi girin.
  ```bash
 OPENAI_API_KEY=api_anahtarı_buraya_yazılacak
 ```
-**6. Arayüz ile Uygulamayı Başlatma:**
+### **6. Arayüz ile Uygulamayı Başlatma:**
 ```
 streamlit run app.py
 ```
