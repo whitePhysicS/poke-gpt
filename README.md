@@ -31,6 +31,8 @@
 ├──  📁 chroma_db/ # Oluşturulan, hazır vektör veritabanı.
 └──  📁 images/ # README için görseller (ekran görüntüsü vb.).
           └── 🖼️ pokegpt_screenshot.png
+          └── 🖼️ demo.gif
+          └── 🖼️ demo2.gif
 ```
 ## 📹Demo Görüntüleri
 - ![Demo1](images/demo.gif)
