@@ -37,3 +37,31 @@
 
 - ![Demo2](images/demo2.gif)
 
+
+## ⚙️ Kurulum ve Çalıştırma
+
+**1. Repoyu Klonlama:**
+```bash
+git clone https://github.com/whitePhysicS/poke-gpt
+cd poke-gpt
+```
+
+**2. Sanal Ortam Oluşturma ve Aktifleştirme (Şiddetle Önerilir):**
+```bash
+python -m venv .venv
+# Windows için:
+.\venv\Scripts\activate
+# macOS/Linux için:
+source .venv/bin/activate
+```
+**3. Gerekli Kütüphanelerin Kurulumu:**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Veri Setini İndirme ve Veritabanını Oluşturma:**
+- **ÖNEMLİ⚠️**: Bu proje için gerekli olan veri dosyaları ham haliyle repoya dahil edilmemiştir. Projenin test edilebilmesi için gerekli veritabanı oluşturulmuş ve "**chroma_db**" adlı klasör ile sunulmuştur. Eğer projeyi sadece denemek isterseniz, bu aşamayı atlayabilirsiniz.
+
+- **Veriyi Çekme**: Öncelikle ```data_wiki_infobox.py``` çalıştırılarak demo için hazırlanmış olan "Abilities" (Yetenekler), "Pokedex" (Pokemonların tamamı), verilerinin hepsini ".txt" uzantısı ile indirmeniz gerekmektedir. Script, ```pokemon_data``` isimli bir klasör oluşturup içerisine indirme işlemini gerçekleştirecektir.
+
+- **Veritabanını Oluşturma**: Ardından  
