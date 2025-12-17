@@ -84,5 +84,3 @@ streamlit run app.py
 
 - Kullanıcı geri bildirim mekanizması eklenmesi.
 
-## 🔗 Deploy Linki
-Uygulamanın canlı demosuna [Demo Linki](https://poke-gpt-4yrfzmwfg38xhakmfeawax.streamlit.app/) adresinden ulaşabilirsiniz. 
